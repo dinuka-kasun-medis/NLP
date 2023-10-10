@@ -35,4 +35,4 @@ def calculate_results(y_true, y_pred):
 # Get baseline results
 baseline_results = calculate_results(y_true=common.val_labels,
                                      y_pred=baseline_preds)
-baseline_results
+print(baseline_results)
