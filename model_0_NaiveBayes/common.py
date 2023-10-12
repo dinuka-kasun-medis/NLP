@@ -16,8 +16,8 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras.layers import TextVectorization
 from tensorflow.keras import layers
 
-train_df = pd.read_csv("util/train.csv")
-test_df = pd.read_csv("util/test.csv")
+train_df = pd.read_csv("../util/train.csv")
+test_df = pd.read_csv("../util/test.csv")
 train_df.head()
 
 train_df_shuffled = train_df.sample(frac=1, random_state = 42)
