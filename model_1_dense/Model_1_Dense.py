@@ -24,6 +24,14 @@ model_1.compile(loss="binary_crossentropy",
 # Get a summary of the model
 model_1.summary()
 
+# Fit the model
+model_1_history = model_1.fit(common.train_sentences, # input sentences can be a list of strings due to text preprocessing layer built-in model
+                              common.train_labels,
+                              epochs=5,
+                              validation_data=(common.val_sentences, common.val_labels),
+                              callbacks=[create_tensorboard_callback(dir_name=SAVE_DIR, 
+                                                                     experiment_name="simple_dense_model")])
+
 # Check the results
 model_1.evaluate(common.val_sentences, common.val_labels)
 
