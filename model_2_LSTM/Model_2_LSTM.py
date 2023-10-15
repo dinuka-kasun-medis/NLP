@@ -7,7 +7,6 @@ from tensorflow.keras import layers
 import common
 from helper_functions import create_tensorboard_callback, calculate_results
 
-
 # Create directory to save TensorBoard logs
 SAVE_DIR = "model_logs"
 
