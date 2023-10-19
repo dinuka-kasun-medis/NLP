@@ -9,6 +9,5 @@ The purpose of this repository is to practice NLP-related machine learning model
 *  Model 4: Bidirectional-LSTM model
 *  Model 5: 1D Convolutional Neural Network
 *  Model 6: TensorFlow Hub Pretrained Feature Extractor
-*  Model 7: Same as model 6 with 10% of training data
 
 👉 [scikit learn machine learning map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
